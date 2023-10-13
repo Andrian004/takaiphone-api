@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const path = require("path");
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // run db
 require("./utils/db");
