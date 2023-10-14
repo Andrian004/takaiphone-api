@@ -33,8 +33,8 @@ app.use((error, req, res) => {
 });
 
 // route utama
-app.get("/*", (req, res) => {
-  res.send("Ini adalah server untuk website toko handphone");
+app.get("/", (req, res) => {
+  res.send("Ini adalah API untuk website TakaiPhone");
 });
 
 app.listen(port, () => {
